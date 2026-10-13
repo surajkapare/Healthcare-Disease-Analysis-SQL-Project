@@ -14,47 +14,9 @@ An end-to-end **SQL exploratory data analysis** of a patient health dataset. Usi
 | **Project title** | Healthcare Disease Analysis & Prediction |
 | **Dataset** | Disease prediction dataset (cleaned) |
 | **Business domain** | Healthcare |
-| **Records analysed** | 1,200 patients in the cleaned table (`cleaned`) |
+| **Records analysed** | 10,000 patients in the cleaned table (`cleaned`) |
 | **Database** | `master_project` |
 | **Target column** | `disease_prediction` (Yes / No) |
-
-## 🗂️ Dataset Description
-
-| Column | Description |
-|---|---|
-| `patient_id` | Unique patient identifier |
-| `age` / `age_group` | Patient age, grouped as 18-30, 31-45, 46-60, 61-75, 76+ |
-| `sex` | Male / Female |
-| `bmi` | Body Mass Index |
-| `blood_pressure` | Blood pressure reading |
-| `glucose_level` | Blood glucose level |
-| `cholesterol` | Cholesterol level |
-| `heart_rate` | Heart rate |
-| `smoking` | Smoker (Yes / No) |
-| `family_history` | Family history of disease (Yes / No) |
-| `physical_activity` | Low / Moderate / High |
-| `sleep_hours` | Average sleep duration |
-| `disease_prediction` | Predicted disease outcome (Yes / No) |
-
-## ❓ Questions Answered
-
-| # | Question | Focus |
-|---|---|---|
-| 1 | What is the disease prediction percentage? | Disease prevalence |
-| 2 | Which age group has the highest number of predicted disease cases? | Risk by age |
-| 3 | What is the disease rate for each sex? | Risk by gender |
-| 4 | Which age group has the highest average blood pressure? | Average BP by age |
-| 5 | Which physical activity group has the highest average BMI? | BMI vs activity |
-| 6 | Which prediction group has the highest average BMI, BP, glucose and cholesterol? | Multi-indicator comparison |
-| 7 | Which smoking group has the highest average blood pressure? | BP vs smoking |
-| 8 | Which family-history group has the highest average glucose? | Glucose vs family history |
-| 9 | Which sex has the highest average cholesterol? | Cholesterol by sex |
-| 10 | Which age group has the highest percentage of smokers? | Smoking by age |
-| 11 | What is the average sleep duration for Yes and No predictions? | Sleep vs prediction |
-| 12 | Which age group has the highest average heart rate? | Heart rate by age |
-| 13 | Which age group + sex combination has the most Yes predictions? | Multi-factor demographics |
-| 14 | Which patients have the highest BMI, glucose, cholesterol and blood pressure? | Extreme-value analysis |
-| 15 | Which combination of age group + sex + smoking + activity + family history has the highest Yes-prediction rate? | Multi-factor risk profile |
 
 ## 🔍 Key Insights
 
@@ -87,32 +49,15 @@ An end-to-end **SQL exploratory data analysis** of a patient health dataset. Usi
 └── README.md
 ```
 
-## ▶️ How to Run
-
-1. Install **MySQL** and MySQL Workbench.
-2. Create the database and import the CSV as a table named `cleaned`:
-   ```sql
-   CREATE DATABASE master_project;
-   USE master_project;
-   ```
-   *(Use Workbench's **Table Data Import Wizard** to load `data/Cleaned_disease_prediction_data.csv` into `cleaned`.)*
-3. Make sure an `age_group` column exists (derived from `age`).
-4. Open and run `sql/MASTERPROJECT.sql` query by query.
-
-## 📊 Presentation
-
-A visual walkthrough of every query, output and insight is available in
-[`presentation/SQL_Project_Healthcare_Disease_Analysis.pdf`](presentation/SQL_Project_Healthcare_Disease_Analysis.pdf).
 
 ## 🚀 Possible Next Steps
 
-- Visualise the results in Power BI / Tableau
+- Visualise the results in Power BI
 - Build a machine-learning model for disease prediction in Python
-- Add rate-within-group analysis (e.g. disease rate within each sex or age group)
 
 ## 👤 Author
 
-**Your Name**
-[LinkedIn](https://www.linkedin.com/in/your-profile) · [GitHub](https://github.com/your-username)
+**Suraj Kapare**
+[LinkedIn](https://linkedin.com/in/suraj-kapare-437941283) · [GitHub](https://github.com/surajkapare)
 
 ⭐ If you found this project useful, consider giving it a star!
